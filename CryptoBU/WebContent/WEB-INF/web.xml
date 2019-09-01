@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>CryptoBU</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>servletController</servlet-name>
+    <servlet-class>com.controller.ControllerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servletController</servlet-name>
+    <url-pattern>/servletController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>cryptoType</servlet-name>
+    <servlet-class>com.controller.SetCryptoCurrencyType</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>cryptoType</servlet-name>
+    <url-pattern>/cryptoType</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <servlet-name>chartDataServlet</servlet-name>
+    <servlet-class>com.controller.ChartDataServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>chartDataServlet</servlet-name>
+    <url-pattern>/chartDataServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>servletControllerType</servlet-name>
+    <servlet-class>com.controller.ControllerServletType</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servletControllerType</servlet-name>
+    <url-pattern>/servletControllerType</url-pattern>
+  </servlet-mapping>
+</web-app>
